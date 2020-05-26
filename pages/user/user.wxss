@@ -1,0 +1,190 @@
+@import "../reflect/reflect.wxss";
+
+.userPage {
+  height: auto;
+  background-color: #f6f6f6
+}
+
+.userPageLogin {
+  height: 400rpx;
+  background-image: url(https://cmei.dmeit.cn/userBg.png);
+  background-size: 100% 100%
+}
+
+.UserInfo {
+  width: 100%;
+  height: 160rpx;
+  color: #fff;
+  display: flex;
+  flex-direction: row
+}
+
+.UserInfoImg {
+  width: 117rpx;
+  height: 117rpx;
+  background-color: #fff;
+  border-radius: 100rpx;
+  text-align: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin-left: 41rpx
+}
+
+.UserInfoImg>image {
+  width: 100%;
+  height: 100%;
+  display: block
+}
+
+.UserInfoTxt {
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-top: 38rpx;
+}
+
+button {
+  width: auto !important;
+  height: 88rpx !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  line-height: 20rpx;
+  border-radius: 0;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+button::after {
+  border: 0
+}
+
+.button-hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff
+}
+
+.UserInfoPeople {
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  flex-direction: row
+}
+
+.UserInfoPeople>view {
+  text-align: center;
+  color: #fff
+}
+
+.w50s {
+  width: 50%;
+  position: relative
+}
+
+.tixian {
+  width: 85rpx;
+  height: 40rpx !important;
+  background-color: red;
+  position: absolute;
+  top: -10rpx;
+  right: 0rpx
+}
+
+.tixian>image {
+  width: 100%;
+  height: 100%;
+  display: block
+}
+
+.heng {
+  width: 2rpx;
+  height: 84rpx;
+  background-color: #fff;
+  margin-top: 40rpx
+}
+
+.UserInfoPeople>view>view {
+  height: 80rpx;
+  line-height: 80rpx
+}
+
+.userPageTitle {
+  width: 100%;
+  height: 93rpx;
+  font-weight: bold;
+  line-height: 93rpx;
+  color: #333;
+  font-size: 36rpx
+}
+
+.userPageTitle>text {
+  padding-left: 34rpx
+}
+
+.userPageCont {
+  width: 100%;
+  height: auto;
+  background-color: #fff
+}
+
+.userPageContSon {
+  width: 90%;
+  height: 104rpx;
+  background-color: #fff;
+  border-bottom: 2rpx solid #eee;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.userPageContSonIcon {
+  width: 40rpx;
+  height: 41rpx;
+  flex-shrink: 0
+}
+
+.userPageContSonIcon>image {
+  width: 100%;
+  height: 100%
+}
+
+.btns{
+  width: 100% !important;
+  position: relative;
+  top: -66rpx;
+  left: 10rpx;
+  opacity: 0;
+}
+.userPageContSonTxt {
+  width: 100%;
+  height: 41rpx;
+  margin-left: 28rpx;
+  font-size: 32rpx;
+  color: #333
+}
+
+.userPageContSonJian {
+  width: 22rpx;
+  height: 32rpx;
+  flex-shrink: 0;
+  background-image: url(https://cmei.dmeit.cn/jiantou.png);
+  margin-top: 37rpx;
+  background-size: 100% 100%
+}
+
+.userTxt {
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0rpx 20rpx;
+}
+
+.user {
+  margin: 0 auto !important;
+}

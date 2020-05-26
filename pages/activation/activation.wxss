@@ -1,0 +1,2 @@
+/* pages/activation/activation.wxss */
+@import "../consultation/consultation.wxss"

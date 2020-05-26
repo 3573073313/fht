@@ -1,0 +1,64 @@
+/* pages/user_information/user_information.wxss */
+@import "../reflect/reflect.wxss";
+.UserInfPage {
+  width: 100%;
+  height: 1600rpx;
+  background-color: #fff;
+}
+
+.UserInView {
+  width: 92%;
+  height: auto;
+  min-height: 109rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #ddd;
+  box-sizing: border-box;
+}
+
+.UserInView:first-child {
+  height: auto;
+  min-height: 157rpx;
+  display: flex;
+  line-height: 157rpx;
+  flex-direction: row;
+}
+
+.UserInView:first-child>.UserInViewTxt {
+  width: 170rpx;
+  height: 157rpx;
+  flex-shrink: 0;
+  line-height: 157rpx
+}
+
+.UserInViewTxt {
+  width: 170rpx;
+  height: 109rpx;
+  flex-shrink: 0;
+  line-height: 109rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.UserInView:first-child>.inputView {
+  width: 100%;
+  height: 157rpx;
+  line-height: 157rpx;
+}
+
+.inputView {
+  width: 100%;
+  height: 109rpx;
+  text-align: right;
+  line-height: 109rpx;
+  color: #333;
+}
+
+.inputView>image {
+  width: 121rpx;
+  height: 121rpx;
+  vertical-align: middle;
+  border-radius: 100rpx;
+}

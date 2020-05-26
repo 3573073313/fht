@@ -1,0 +1,42 @@
+<!--pages/not_visited/not_visited.wxml-->
+<!--pages/order_detail/order_detail.wxml-->
+<view class="orderDetailPage">
+
+	<form bindsubmit="formSub">
+		<view class="publicTitle">
+			<text>看房信息</text>
+		</view>
+		<view class="orderDetailPageSon">
+			<view class="orderDetailPageSonName">
+				<image src="../image/icon/lou.png"></image>
+				<text>楼盘名称</text>
+			</view>
+			<view class="orderDetailPageSonCnt">
+				<input type="text" class="mt30" disabled="true" name="name" value="{{name}}"></input>
+			</view>
+		</view>
+
+		<view class="orderDetailPageSon">
+			<view class="orderDetailPageSonName">
+				<image src="../image/icon/timeDate.png"></image>
+				<text>到访时间</text>
+			</view>
+			<view class="orderDetailPageSonCnt">
+				<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+					<input type="text" class="mt30" disabled="true" name="time" value="{{time}}"></input>
+				</picker>
+			</view>
+		</view>
+		<view class="publicTitle">
+			<text>上传到访单</text>
+		</view>
+		<view class="InputView" style="flex-direction: column;padding-bottom: 20rpx;padding-top: 20rpx;">
+			<view class="fileSuccess" bindtap="fileUpload">
+				<image src="{{UpImg}}" name="img"></image>
+			</view>
+		</view>
+		<view class="mt180">
+			<button class="formSub" form-type="submit">确认到访</button>
+		</view>
+	</form>
+</view>

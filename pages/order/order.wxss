@@ -1,0 +1,140 @@
+@import "../index/index.wxss";
+
+.orderPage {
+  width: 100%;
+  height: auto;
+  background-color: #eee;
+  padding-bottom: 5rpx
+}
+
+.orderSearchIcon {
+  width: 35rpx;
+  height: 35rpx;
+  border-radius: 50rpx;
+  flex-shrink: 0
+}
+
+.orderSearchIcon>image {
+  width: 100%;
+  display: block;
+  height: 100%
+}
+
+.orderSearch {
+  width: 90%;
+  height: 100rpx;
+  background-color: transparent;
+  line-height: 100rpx;
+  color: #ff2712;
+  margin: 0 auto
+}
+
+.orderProduct {
+  width: 100%;
+  height: auto
+}
+
+.orderProductSon {
+  width: 710rpx;
+  height: 280rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+  display: table
+}
+
+.orderProductSonTop {
+  width: 100%;
+  height: 85rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  position: relative
+}
+
+.titleImg {
+  width: auto;
+  min-width: 216rpx;
+  height: 85rpx;
+  background-image: url(https://cmei.dmeit.cn/tals.png);
+  background-size: 100% 100%;
+  position: absolute;
+  line-height: 92rpx;
+  padding: 0rpx 40rpx 0rpx 25rpx;
+  color: #fff;
+  font-size: 30rpx;
+  left: -12rpx;
+  top: 0rpx;
+  z-index: 99
+}
+
+.titleTxt {
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  float: right;
+  text-align: right;
+  color: #06478f;
+  font-size: 28rpx;
+  padding-right: 20rpx
+}
+
+.orderProductSonCont {
+  width: 100%;
+  height: 150rpx;
+  display: table
+}
+
+.orderProductSonContSpeed {
+  width: 80%;
+  height: 20rpx;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 40rpx
+}
+
+.orderProductSonContSpeed>view {
+  width: 42rpx;
+  height: 42rpx;
+  position: absolute;
+  border-radius: 50rpx;
+  top: -14rpx;
+  text-align: center
+}
+
+.orderProductSonContSpeed>view>image {
+  width: 100%;
+  height: 100%
+}
+
+.P1 {
+  left: -10rpx
+}
+
+.P2 {
+  left: 46%
+}
+
+.P3 {
+  right: -10rpx
+}
+
+.orderProductSonContTime {
+  width: 100%;
+  height: 84rpx;
+  margin-top: 12rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly
+}
+
+.orderProductSonContTime>view {
+  width: 26%;
+  font-size: 28rpx
+}
+
+.Error {
+  width: 100%;
+  height: 200rpx;
+  text-align: center;
+  line-height: 200rpx
+}

@@ -1,0 +1,133 @@
+<!--pages/list/list.wxml-->
+<view class="listPage wb100">
+	<!-- 搜索 -->
+	<view class="wb100 homeSearchIsShare flex flexDr flexJcSb sticky">
+		<view class="homeSearch wb100 mt15 bR100 flex flexDr" style="margin: 10rpx 40rpx;">
+			<view class="homeSearchIcon ml30  mt15">
+				<image src="../image/schare.png"></image>
+			</view>
+			<view class="ml10  wb100">
+				<input class="mt15 wb100" type="text" bindinput="sousuo" placeholder="请输入您要找的楼盘名称"></input>
+			</view>
+		</view>
+	</view>
+	<!-- 搜索 -->
+
+	<!-- 广告图 -->
+
+	<view class="listBanner wb100">
+		<view class="listBannerSon">
+			<image src="{{tupians}}"></image>
+		</view>
+	</view>
+
+	<!-- 广告图 -->
+
+	<!-- 產品内容 + 導航 -->
+
+	<view class="listProduct wb100">
+		<!-- 導航 -->
+		<view class="listProductNav wb100 flex flexDr sticky">
+			<view class="pore" wx:for="{{nav}}" wx:key="index" catchtap="NavFun" data-index="{{index}}">
+				<text>{{item.navTxt}}</text>
+				<view class="iconBtm">
+					<image src="../image/icon/btm.png"></image>
+				</view>
+			</view>
+
+		</view>
+		<!-- 導航 -->
+
+		<view class="{{NavShow == true ? 'NavContShow' : 'hides'}}">
+
+			<view class="NavConts {{NavIndex == 0 ? 'NavContShow' : ''}}">
+				<scroll-view style="height: 300rpx;" scroll-y="true">
+					<view class="dizhi" wx:for="{{dizhi}}" wx:key="index" catchtap="sheng" data-index="{{index}}">
+						<view>
+							<text>{{item.quyuming}}</text>
+						</view>
+					</view>
+				</scroll-view>
+
+				<view class="shi {{shi == true ? 'NavContShow' : ''}}">
+					<scroll-view style="height: 300rpx;" scroll-y="true">
+						<view class="dizhi shicolor" wx:for="{{dizhi[shiindex].xiaji}}" wx:key="index" catchtap="shi" data-index="{{index}}">
+							<text>{{item.quyuming}}</text>
+						</view>
+					</scroll-view>
+				</view>
+
+				<view class="qu {{qu == true ? 'NavContShow' : ''}}">
+					<scroll-view style="height: 300rpx;" scroll-y="true">
+						<view class="dizhi qucolor" wx:for="{{dizhi[shiindex].xiaji[quindex].xiaji}}" catchtap="qu" data-id="{{item.id}}" wx:key="index">
+							<text>{{item.quyuming}}</text>
+						</view>
+					</scroll-view>
+				</view>
+
+			</view>
+
+			<view class="NavConts {{NavIndex == 1 ? 'NavContShow' : ''}}">
+				<view class="jiage" wx:for="{{jiage}}" catchtap="jiage" data-jiage="{{item}}" wx:key="index">
+					<text>{{item}}元/m²</text>
+				</view>
+			</view>
+
+
+			<view class="NavConts {{NavIndex == 2 ? 'NavContShow' : ''}}">
+				<view class="fangxing">
+					<view class="fangxingSon" wx:for="{{fangxing}}" wx:key="index" data-fangxing="{{item}}" catchtap="fangxing">
+						<text>{{item}}室</text>
+					</view>
+				</view>
+			</view>
+
+			<view class="NavConts {{NavIndex == 3 ? 'NavContShow' : ''}}">
+				<view class="jiage" wx:for="{{mianji}}" catchtap="mianji" data-mianji="{{item}}" wx:key="index">
+					<text>{{item}}/m²</text>
+				</view>
+			</view>
+
+		</view>
+
+		<!-- 内容 -->
+
+		<view wx:if="{{product!=false}}">
+			<view class="homeProduct  wd100">
+				<!-- 单楼渲染 -->
+				<view wx:for="{{product}}" wx:key="index" catchtap="listDetail" data-id="{{item.id}}" class="homeProductSon wd100 flex flexDr flexJcSb">
+					<view class="homeProductSonImg bR10  mt20">
+						<image src="{{item.zhutu}}"></image>
+					</view>
+					<view class="homeProductSonCont mt20 ml30">
+						<view class="homeProductSonContTitle">
+							<text>{{item.name}}</text>
+						</view>
+						<view class="homeProductSonContAddress">
+							<text>{{item.dizhi}}</text>
+						</view>
+						<view class="homeProductSonContParameter flex flexDr">
+							<view class="homeProductSonContParameterLab" wx:for="{{item.biaoqians}}" wx:key="index"><text>{{item}}</text></view>
+						</view>
+						<view class="homeProductSonContPeople">
+							<text>{{item.shoujia}}</text>元/m²起
+						</view>
+					</view>
+				</view>
+				<!-- 单楼渲染 -->
+			</view>
+		</view>
+
+		<!-- 内容 -->
+
+		<view wx:else>
+			<view class="homeProduct fontc  wd100">
+				<text>暂无数据</text>
+			</view>
+		</view>
+
+	</view>
+
+	<!-- 產品内容 + 導航 -->
+
+</view>

@@ -1,0 +1,36 @@
+/* pages/consultation/consultation.wxss */
+.consultationPage {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  text-align: center;
+}
+
+.consultationPageSon {
+  width: 92%;
+  height: auto;
+  min-height: 128rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #eaeaea;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20rpx 0rpx;
+}
+
+.consultationPageSonTitle {
+  width: 100%;
+  height: auto;
+  min-height: 50rpx;
+  text-align: justify;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.consultationPageSonDate {
+  width: 100%;
+  height: 40rpx;
+  text-align: right;
+  color: #BEBEBE;
+  font-size: 24rpx;
+}

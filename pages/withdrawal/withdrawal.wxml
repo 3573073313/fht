@@ -1,0 +1,15 @@
+<!--pages/withdrawal/withdrawal.wxml-->
+<!--pages/capital/capital.wxml-->
+<view class="capitalPage">
+	<view class="capitalPageSon" wx:for="{{tiXianArr}}">
+		<view class="capitalPageSonCon">
+			<view class="font28 mt30" wx:if="{{item.leixing == 1}}"><text style="font-size: 28rpx;">支付宝</text></view>
+			<view class="font28 mt30" wx:elif="{{item.leixing == 2}}"><text style="font-size: 28rpx;">微信</text></view>
+			<view class="font28 mt30" wx:elif="{{item.leixing == 3}}"><text style="font-size: 28rpx;">银行卡</text></view>
+			<view class="font22 mt10"><text>{{timeArr[index]}}</text></view>
+		</view>
+		<view class="font36">
+			<text>-{{item.jine}}</text>元
+		</view>
+	</view>
+</view>

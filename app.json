@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/order",
+    "pages/user/user",
+    "pages/list/list",
+    "pages/reflect/reflect",
+    "pages/list_detail/list_detail",
+    "pages/order_detail/order_detail",
+    "pages/not_visited/not_visited",
+    "pages/not_deal/not_deal",
+    "pages/evpi/evpi",
+    "pages/consultation/consultation",
+    "pages/consultation_detail/consultation_detail",
+    "pages/visit/visit",
+    "pages/activation/activation",
+    "pages/capital/capital",
+    "pages/withdrawal/withdrawal",
+    "pages/user_information/user_information",
+    "pages/search/search",
+    "pages/charges/charges",
+    "pages/change_evpi/change_evpi"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#808080",
+    "selectedColor": "#06478f",
+    "list": [{
+        "iconPath": "/pages/image/home.png",
+        "selectedIconPath": "/pages/image/homeUp.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "/pages/image/order.png",
+        "selectedIconPath": "/pages/image/orderUp.png",
+        "pagePath": "pages/order/order",
+        "text": "预约"
+      },
+      {
+        "iconPath": "/pages/image/user.png",
+        "selectedIconPath": "/pages/image/userUp.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,4 @@
+<!--pages/charges/charges.wxml-->
+<view style="width: 94%; margin: 0 auto;">
+	<rich-text nodes="{{yongjinjieshao}}" ></rich-text>
+</view>

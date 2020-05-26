@@ -1,0 +1,119 @@
+<!--pages/user/user.wxml-->
+<view class="userPage wb100">
+	<view class="userPageLogin wb100" wx:if="{{userCanshu}}">
+		<view>
+			<!-- 用户信息 -->
+			<view class="UserInfo">
+				<view class="UserInfoImg mt30">
+					<image src="{{userimg}}"></image>
+				</view>
+				<view class="userTxt">
+					<view class="UserInfoTxt">
+						<text>{{username}}</text>
+					</view>
+					<view catchtap="evpiFun" wx:if="{{zhuangtai != true}}">
+						<text>完善信息</text>
+					</view>
+					<view catchtap="" wx:else>
+						<text>信息完善成功</text>
+					</view>
+				</view>
+			</view>
+			<!-- 用户信息 -->
+		</view>
+
+		<!-- 金额 + 提现 -->
+		<view class="UserInfoPeople">
+			<view class="w50s">
+				<view class="tixian" catchtap="reflectFun" data-jine="{{jine}}">
+					<image src="../image/tixian.png"></image>
+				</view>
+				<view class="mt15">￥<text style="font-size: 50rpx; font-weight: bold;">{{jine}}.00</text></view>
+				<view style="height: 50rpx;line-height: 50rpx;"><text>可提现金额</text></view>
+			</view>
+			<view class="heng"></view>
+			<view class="w50s" catchtap="activaion">
+				<view class="mt15">￥<text style="font-size: 50rpx; font-weight: bold;">{{daijihuo}}.00</text></view>
+				<view style="height: 50rpx;line-height: 50rpx;"><text>待激活</text></view>
+			</view>
+		</view>
+		<!-- 金额 + 提现 -->
+	</view>
+
+	<view class="userPageLogin wb100" wx:else="{{UserInfo == 0}}">
+		<!-- 用户信息没有获取时候 -->
+		<view class="UserInfo flex flexDr">
+			<view class="UserInfoImg mt30">
+				<image src="../image/userLogin.png"></image>
+			</view>
+			<view class="UserInfoTxt ml20">
+				<button bindgetuserinfo="GetUserInfo" open-type="getUserInfo">点击授权信息</button>
+			</view>
+		</view>
+		<!-- 用户信息没有获取时候 -->
+
+		<!-- 金额 + 提现 -->
+		<view class="UserInfoPeople">
+			<view class="w50s">
+				<view class="mt15">￥<text style="font-size: 50rpx; font-weight: bold;">0.00</text></view>
+				<view style="height: 50rpx;line-height: 50rpx;"><text>可提现金额</text></view>
+			</view>
+			<view class="heng"></view>
+			<view class="w50s">
+				<view class="mt15">￥<text style="font-size: 50rpx; font-weight: bold;">0.00</text></view>
+				<view style="height: 50rpx;line-height: 50rpx;"><text>待激活</text></view>
+			</view>
+		</view>
+		<!-- 金额 + 提现 -->
+	</view>
+
+	<view class="userPageTitle">
+		<text>基本服务</text>
+	</view>
+
+	<!-- 服务类目 -->
+	<view class="userPageCont">
+		<view class="userPageContSon" catchtap="capital">
+			<view class="userPageContSonIcon mt30">
+				<image src="../image/zijin.png"></image>
+			</view>
+			<view class="userPageContSonTxt mt30">
+				<text>资金明细</text>
+			</view>
+			<view class="userPageContSonJian">
+			</view>
+		</view>
+
+		<view class="userPageContSon" catchtap="">
+			<view class="userPageContSonIcon mt30">
+				<image src="../image/kefu.png"></image>
+			</view>
+			<view class="userPageContSonTxt mt30">
+				<text>在线客服</text>
+				<button class="btns" style="background:#f90;text-align:left; opcity: 0;" open-type="contact"></button>
+
+			</view>
+			<view class="userPageContSonJian">
+			</view>
+		</view>
+
+		<view class="userPageContSon" catchtap="UserInfPage">
+			<view class="userPageContSonIcon mt30">
+				<image src="../image/xinxi.png"></image>
+			</view>
+			<view class="userPageContSonTxt mt30">
+				<text>个人信息</text>
+			</view>
+			<view class="userPageContSonJian">
+			</view>
+		</view>
+
+
+	</view>
+
+	<!-- 
+	<view class="mt100" wx:if="{{userCanshu}}">
+		<button class="formSub user" catchtap="closeFun">退出登录</button>
+	</view> -->
+
+</view>

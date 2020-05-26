@@ -1,0 +1,19 @@
+<!--pages/activation/activation.wxml-->
+<view class="consultationPage" wx:if="{{loulist != ''}}">
+
+
+	<view class="consultationPageSon" wx:for="{{loulist}}" catchtap="DetailFun">
+		<view class="consultationPageSonTitle">
+			<text> <text style="color: #45B6F7;">{{item.username}}</text>邀请了<text style="color: #f90;">{{item.fanyongname}}</text>获得分享有礼预计{{item.fenxiangjin}}元，成交佣金预计{{item.yongjin}}元</text>
+		</view>
+		<view class="consultationPageSonDate">
+			<text>{{shijian[index]}}</text>
+		</view>
+	</view>
+
+
+</view>
+
+<view class="consultationPage" wx:else>
+	<text>暂无数据</text>
+</view>

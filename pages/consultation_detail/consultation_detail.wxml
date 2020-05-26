@@ -1,0 +1,23 @@
+<!--pages/consultation_detail/consultation_detail.wxml-->
+<view class="consultation_detailPage">
+	<view class="consultation_detailPageTitle">
+		<view class="consultation_detailPageTitleCont">
+			<text>{{title}}</text>
+		</view>
+		<view class="consultation_detailPageTitleDate">
+			<text>{{date}}</text>
+		</view>
+	</view>
+
+	<view class="consultation_detailPageCont">
+		<rich-text nodes="{{value}}"></rich-text>
+	</view>
+
+
+
+
+
+
+
+
+</view>

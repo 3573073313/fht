@@ -1,0 +1,107 @@
+<!-- index.wxml -->
+<view class="homePageTop">
+	<!-- 搜索 + 分享  -->
+	<view class="wb100 homeSearchIsShare flex flexDr sticky">
+		<view class="homeSearch wb100 mt15 bR100  flex flexDr" catchtap="search">
+			<view class="homeSearchIcon ml30  mt15">
+				<image src="../image/schare.png"></image>
+			</view>
+			<view class="ml10">
+				<text>请输入您要查找的楼盘名称</text>
+			</view>
+		</view>
+		<view class="homeShare  ml30 mt20" catchtap="closeFun">
+			<image src="../image/share.png"></image>
+		</view>
+	</view>
+
+	<!-- 搜索 + 分享  -->
+
+
+	<!-- 轮播图  -->
+
+	<view class="homeSwiper bR20  wd100  mt10">
+		<swiper indicator-dots="true" indicator-color="#fff" indicator-active-color="#06478f">
+			<block wx:for="{{swiper}}" wx:key="index">
+				<swiper-item>
+					<image src="{{item.tupian}}" style="border-radius: 20rpx;"></image>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+
+	<!-- 轮播图  -->
+
+	<!-- 五大导航  -->
+
+	<view class="homeNav mt30 wd100 flex flexDr flexJcSb ">
+
+		<view class="homeNavSon flexDc" wx:for="{{Nav}}" data-title="{{item.name}}" data-id="{{item.id}}" catchtap="navListFun" wx:key="index">
+			<view class="homeNavSonImg">
+				<image src="{{item.tupian}}"></image>
+			</view>
+			<view class="homeNavSonTxt">
+				<text>{{item.name}}</text>
+			</view>
+		</view>
+
+	</view>
+
+	<!-- 五大导航  -->
+
+	<!-- 公告通讯 -->
+
+	<view class="homeNotice  flex  flexDr mt10" catchtap="information">
+		<view class="homeNoticeImg  ml10">
+			<image src="../image/notice.png"></image>
+		</view>
+		<view class="homeNoticeCont ml20">
+			<view class="txtOver" wx:for="{{messages}}" wx:key="id">
+				<view class="txtOverIcon bR50 mt15"></view>
+				<text  class="ml20">{{item.name}}</text>
+			</view>
+		</view>
+	</view>
+
+	<!-- 公告通讯 -->
+</view>
+
+<!-- 下層部分 -->
+<view class="homePageBtm">
+	<view class="homeProduct  wd100 mt30">
+		<!-- 单楼渲染 -->
+		<view wx:for="{{product}}" wx:key="index" catchtap="listDetail" data-id="{{item.id}}" class="homeProductSon wd100 flex flexDr flexJcSb">
+			<view class="homeProductSonImg bR10  mt20">
+				<image src="{{item.zhutu}}"></image>
+			</view>
+			<view class="homeProductSonCont mt20 ml30">
+				<view class="homeProductSonContTitle">
+					<text>{{item.name}}</text>
+				</view>
+				<view class="homeProductSonContAddress">
+					<text>{{item.dizhi}}</text>
+				</view>
+				<view class="homeProductSonContParameter flex flexDr">
+					<view class="homeProductSonContParameterLab" wx:for="{{item.biaoqians}}" wx:key="index"><text>{{item}}</text></view>
+				</view>
+				<view class="homeProductSonContPeople">
+					<text>{{item.junjia}}</text>元/m²起
+				</view>
+			</view>
+		</view>
+		<!-- 单楼渲染 -->
+	</view>
+</view>
+<!-- 下層部分 -->
+
+<!-- 全屏分享 -->
+<view class="{{shareFlag == true ? 'share' : 'hide'}}">
+	<view class="shareSon">
+		<button open-type="share"></button>
+		<image src="../image/img/fenx.png"></image>
+	</view>
+	<view class="shareSonClose" catchtap="closeFun">
+		<image src="../image/img/close.png"></image>
+	</view>
+</view>
+<!-- 全屏分享 -->

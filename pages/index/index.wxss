@@ -1,0 +1,253 @@
+.homePageTop {
+  background-color: #fff;
+  margin: 0rpx 30rpx;
+  height: auto
+}
+.padds{
+  padding: 0rpx 33rpx;
+  box-sizing: border-box;
+}
+.homeSearchIsShare {
+  height: 100rpx;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.homeSearch {
+  width: 100%;
+  height: 70rpx;
+  background-color: #eee;
+  line-height: 70rpx;
+  color: #808080;
+  font-size: 30rpx
+}
+
+.homeShare {
+  width: 50rpx;
+  height: 55rpx;
+  flex-shrink: 0
+}
+
+.homeShare>image {
+  width: 100%;
+  height: 100%
+}
+
+.homeSearchIcon {
+  width: 42rpx;
+  height: 45rpx;
+  flex-shrink: 0
+}
+
+.homeSearchIcon>image {
+  width: 100%;
+  height: 100%
+}
+
+.homeSwiper {
+  height: 185rpx;
+  background-color: #e1e1e1;
+  border-radius: 20rpx;
+  overflow: hidden
+}
+
+swiper {
+  height: 185rpx;
+  overflow: hidden !important;
+}
+
+swiper-item {
+  overflow: hidden !important;
+
+}
+
+swiper-item>image {
+  width: 100%;
+  height: 100%
+}
+
+.homeNav {
+  height: 180rpx
+}
+
+.homeNavSon {
+  width: 100rpx;
+  height: 180rpx
+}
+
+.homeNavSonImg {
+  height: 100rpx;
+  width: 100rpx;
+  margin: 0 auto
+}
+
+.homeNavSonImg>image {
+  width: 100%;
+  height: 100%
+}
+
+.homeNavSonTxt {
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #333
+}
+
+.homeNotice {
+  width: 100%;
+  height: 120rpx
+}
+
+.homeNoticeImg {
+  width: 90rpx;
+  height: 90rpx;
+  flex-shrink: 0
+}
+
+.homeNoticeImg>image {
+  width: 100%;
+  height: 100%
+}
+
+.homeNoticeCont {
+  width: 100%;
+  height: 90rpx
+}
+
+.homeNoticeCont>view {
+  height: 45rpx;
+  line-height: 45rpx;
+  color: #333;
+  -webkit-line-clamp: 1
+}
+
+.homePageBtm {
+  width: 100%;
+  height: auto;
+  background-color: #f6f6f6;
+  overflow: hidden
+}
+
+.homeProduct {
+  height: auto;
+}
+
+.fontc {
+  text-align: center;}
+
+
+.homeProductSon {
+  height: 200rpx;
+  background-color: #fff;
+  padding: 0rpx 30rpx
+}
+
+.homeProductSonImg {
+  width: 215rpx;
+  height: 165rpx;
+  flex-shrink: 0;
+  overflow: hidden
+}
+
+.homeProductSonImg>image {
+  width: 100%;
+  height: 100%
+}
+
+.homeProductSonCont {
+  width: 100%;
+  height: 160rpx;
+  background-color: #fff
+}
+
+.homeProductSonContTitle {
+  width: 100%;
+  height: 45rpx;
+  font-weight: bold;
+  font-size: 32rpx;
+  color: #333
+}
+
+.homeProductSonContAddress {
+  width: 100%;
+  height: 45rpx;
+  font-size: 26rpx;
+  line-height: 45rpx;
+  color: #969ca8
+}
+
+.homeProductSonContParameter {
+  width: 100%;
+  height: 30rpx
+}
+
+.homeProductSonContParameterLab {
+  width: auto;
+  padding: 0rpx 10rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  background-color: #ffe9e7;
+  display: inline-block;
+  color: #ff2712;
+  font-size: 22rpx;
+  text-align: center;
+  margin-right: 10rpx;
+  border-radius: 5rpx
+}
+
+.homeProductSonContPeople {
+  width: 100%;
+  height: 45rpx;
+  color: #06478f;
+  font-size: 24rpx
+}
+
+.homeProductSonContPeople>text {
+  font-size: 34rpx;
+  font-weight: bold
+}
+
+.share {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999
+}
+
+.shareSon {
+  width: 355rpx;
+  height: 368rpx;
+  position: relative;
+}
+.shareSon>button{
+  position: absolute;
+  bottom: -80rpx;
+  opacity: 0;
+  left: 0rpx;
+}
+.shareSon>image {
+  width: 100%
+}
+
+.shareSonClose {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 155rpx
+}
+
+.hide {
+  display: none
+}
+
+.shareSonClose>image {
+  width: 100%;
+  height: 100%
+}

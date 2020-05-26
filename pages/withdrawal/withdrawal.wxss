@@ -1,0 +1,2 @@
+/* pages/withdrawal/withdrawal.wxss */
+@import "../capital/capital.wxss";

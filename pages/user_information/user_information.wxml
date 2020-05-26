@@ -1,0 +1,57 @@
+<!--pages/user_information/user_information.wxml-->
+<view class="UserInfPage">
+	<form bindsubmit="">
+		<view class="UserInView">
+			<view class="UserInViewTxt">
+				<text>头像</text>
+			</view>
+			<view class="inputView">
+				<image src="{{userimg}}"></image>
+			</view>
+		</view>
+
+		<view class="UserInView">
+			<view class="UserInViewTxt">
+				<text>姓名</text>
+			</view>
+			<view class="inputView">
+				<text>{{username}}</text>
+			</view>
+		</view>
+
+
+		<view class="UserInView">
+			<view class="UserInViewTxt">
+				<text>手机号</text>
+			</view>
+			<view class="inputView">
+				<text>{{shouji}}</text>
+			</view>
+		</view>
+
+		<view class="UserInView">
+			<view class="UserInViewTxt">
+				<text>选择类型</text>
+			</view>
+			<view class="inputView">
+				<text>{{leixing}}</text>
+			</view>
+		</view>
+
+		<view class="UserInView">
+			<view class="UserInViewTxt">
+				<text>意向区域</text>
+			</view>
+			<view class="inputView">
+				<!-- <picker mode="region"> -->
+					<text>{{quyu}}</text>
+				<!-- </picker> -->
+			</view>
+		</view>
+
+		<button class="formSub" bindtap="UpdateFun" data-name="{{username}}" data-phone="{{shouji}}">更改信息</button>
+
+
+	</form>
+
+</view>

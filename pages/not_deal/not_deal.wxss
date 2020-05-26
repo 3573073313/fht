@@ -1,0 +1,2 @@
+/* pages/not_deal/not_deal.wxss */
+@import "../not_visited/not_visited.wxss"

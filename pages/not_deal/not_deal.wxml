@@ -1,0 +1,41 @@
+<!--pages/not_deal/not_deal.wxml-->
+<view class="orderDetailPage">
+
+	<form bindsubmit="formSub">
+		<view class="publicTitle">
+			<text>看房信息</text>
+		</view>
+		<view class="orderDetailPageSon">
+			<view class="orderDetailPageSonName">
+				<image src="../image/icon/lou.png"></image>
+				<text>楼盘名称</text>
+			</view>
+			<view class="orderDetailPageSonCnt">
+				<text>{{name}}</text>
+			</view>
+		</view>
+
+		<view class="orderDetailPageSon">
+			<view class="orderDetailPageSonName">
+				<image src="../image/icon/timeDate.png"></image>
+				<text>成交时间</text>
+			</view>
+			<view class="orderDetailPageSonCnt">
+				<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+					<text>{{time}}</text>
+				</picker>
+			</view>
+		</view>
+		<view class="publicTitle">
+			<text>上传成交单</text>
+		</view>
+		<view class="InputView" style="flex-direction: column;padding-bottom: 20rpx;padding-top: 20rpx;">
+			<view class="fileSuccess" bindtap="fileUpload">
+				<image src="{{UpImg}}"></image>
+			</view>
+		</view>
+		<view class="mt180">
+			<button class="formSub" form-type="submit">确认成交</button>
+		</view>
+	</form>
+</view>

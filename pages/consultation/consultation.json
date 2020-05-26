@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#06478F",
+  "navigationBarTitleText": "房源资讯",
+  "navigationBarTextStyle": "white",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}

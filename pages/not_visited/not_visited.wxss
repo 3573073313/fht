@@ -1,0 +1,13 @@
+/* pages/not_visited/not_visited.wxss */
+@import "../order_detail/order_detail.wxss";
+@import "../reflect/reflect.wxss";
+.publicTitle{
+  width: 100%;
+  height: 86rpx;
+  background-color: rgb(246, 246, 246);
+  line-height: 86rpx;
+  box-sizing: border-box;
+  padding: 0rpx 32rpx;
+  color: #333;
+  font-size: 30rpx;
+}

@@ -1,0 +1,48 @@
+<!--pages/order_detail/order_detail.wxml-->
+<view class="orderDetailPage">
+	<form bindsubmit="formSub">
+		<view class="orderDetailPageSon">
+			<view class="orderDetailPageSonName">
+				<image src="../image/icon/lou.png"></image>
+				<text>楼盘名称</text>
+			</view>
+			<view class="orderDetailPageSonCnt">
+				<input class="mt30" disabled="true" type="text" value="{{loupanName}}" name="Pname"></input>
+			</view>
+		</view>
+		<view class="orderDetailPageSon">
+			<view class="orderDetailPageSonName">
+				<image src="../image/icon/name.png"></image>
+				<text>客户姓名</text>
+			</view>
+			<view class="orderDetailPageSonCnt">
+				<input class="mt30" disabled="true" type="text" value="{{name}}" name="Uname"></input>
+			</view>
+		</view>
+
+		<view class="orderDetailPageSon">
+			<view class="orderDetailPageSonName">
+				<image style="width:28rpx; hieght: 35rpx;" src="../image/icon/phones.png"></image>
+				<text>手机号</text>
+			</view>
+			<view class="orderDetailPageSonCnt">
+				<input class="mt30" disabled="true" type="text" value="{{phone}}" name="Phone"></input>
+			</view>
+		</view>
+		<view class="orderDetailPageSon">
+			<view class="orderDetailPageSonName">
+				<image src="../image/icon/timeDate.png"></image>
+				<text>预约时间</text>
+			</view>
+			<view class="orderDetailPageSonCnt">
+				<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+					<input class="mt30" disabled="true" type="text" value="{{time}}" name="Time"></input>
+				</picker>
+			</view>
+		</view>
+
+		<view class="mt180">
+			<button class="formSub" form-type="submit">确认预约</button>
+		</view>
+	</form>
+</view>

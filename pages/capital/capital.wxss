@@ -1,0 +1,38 @@
+/* pages/capital/capital.wxss */
+.capitalPage {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+
+.capitalPageSon {
+  width: 92%;
+  height: 136rpx;
+  margin: 0 auto;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eaeaea;
+  display: flex;
+  flex-direction: row;
+}
+
+.capitalPageSon>view {
+  flex: 1;
+}
+
+.font36 {
+  font-size: 36rpx;
+  color: #FF2712;
+  line-height: 136rpx;
+  text-align: right;
+}
+
+.font28 {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.font22 {
+  font-size: 22rpx;
+  color: #cccccc;
+}

@@ -1,0 +1,499 @@
+.w10 {
+  width: 10rpx
+}
+
+.wb10 {
+  width: 10%
+}
+
+.w20 {
+  width: 20rpx
+}
+
+.wb20 {
+  width: 20%
+}
+
+.w30 {
+  width: 30rpx
+}
+
+.wb30 {
+  width: 30%
+}
+
+.w40 {
+  width: 40rpx
+}
+
+.wb40 {
+  width: 40%
+}
+
+.w50 {
+  width: 50rpx
+}
+
+.wb50 {
+  width: 50%
+}
+
+.w60 {
+  width: 60rpx
+}
+
+.wb60 {
+  width: 60%
+}
+
+.w70 {
+  width: 70rpx
+}
+
+.wb70 {
+  width: 70%
+}
+
+.w80 {
+  width: 80rpx
+}
+
+.wb80 {
+  width: 80%
+}
+
+.w90 {
+  width: 90rpx
+}
+
+.wb90 {
+  width: 90%
+}
+
+.w100 {
+  width: 100rpx
+}
+
+.wb100 {
+  width: 100%
+}
+
+.mt15 {
+  margin-top: 15rpx
+}
+
+.ml10 {
+  margin-left: 10rpx
+}
+
+.ml20 {
+  margin-left: 20rpx
+}
+
+.ml30 {
+  margin-left: 30rpx
+}
+
+.ml40 {
+  margin-left: 40rpx
+}
+
+.ml50 {
+  margin-left: 50rpx
+}
+
+.ml60 {
+  margin-left: 60rpx
+}
+
+.ml70 {
+  margin-left: 70rpx
+}
+
+.ml80 {
+  margin-left: 80rpx
+}
+
+.ml90 {
+  margin-left: 90rpx
+}
+
+.ml100 {
+  margin-left: 100rpx
+}
+
+.mr10 {
+  margin-right: 10rpx
+}
+
+.mr20 {
+  margin-right: 20rpx
+}
+
+.mr30 {
+  margin-right: 30rpx
+}
+
+.mr40 {
+  margin-right: 40rpx
+}
+
+.mr50 {
+  margin-right: 50rpx
+}
+
+.mr60 {
+  margin-right: 60rpx
+}
+
+.mr70 {
+  margin-right: 70rpx
+}
+
+.mr80 {
+  margin-right: 80rpx
+}
+
+.mr90 {
+  margin-right: 90rpx
+}
+
+.mr100 {
+  margin-right: 100rpx
+}
+
+.mt10 {
+  margin-top: 10rpx
+}
+
+.mt20 {
+  margin-top: 20rpx
+}
+
+.mt30 {
+  margin-top: 30rpx
+}
+
+.mt40 {
+  margin-top: 40rpx
+}
+
+.mt50 {
+  margin-top: 50rpx
+}
+
+.mt60 {
+  margin-top: 60rpx
+}
+
+.mt70 {
+  margin-top: 70rpx
+}
+
+.mt80 {
+  margin-top: 80rpx
+}
+
+.mt90 {
+  margin-top: 90rpx
+}
+
+.mt100 {
+  margin-top: 100rpx
+}
+
+.mb10 {
+  margin-bottom: 10rpx
+}
+
+.mb20 {
+  margin-bottom: 20rpx
+}
+
+.mb30 {
+  margin-bottom: 30rpx
+}
+
+.mb40 {
+  margin-bottom: 40rpx
+}
+
+.mb50 {
+  margin-bottom: 50rpx
+}
+
+.mb60 {
+  margin-bottom: 60rpx
+}
+
+.mb70 {
+  margin-bottom: 70rpx
+}
+
+.mb80 {
+  margin-bottom: 80rpx
+}
+
+.mb90 {
+  margin-bottom: 90rpx
+}
+
+.mb100 {
+  margin-bottom: 100rpx
+}
+
+.pl10 {
+  padding-left: 10rpx
+}
+
+.pl20 {
+  padding-left: 20rpx
+}
+
+.pl30 {
+  padding-left: 30rpx
+}
+
+.pl40 {
+  padding-left: 40rpx
+}
+
+.pl50 {
+  padding-left: 50rpx
+}
+
+.pl60 {
+  padding-left: 60rpx
+}
+
+.pl70 {
+  padding-left: 70rpx
+}
+
+.pl80 {
+  padding-left: 80rpx
+}
+
+.pl90 {
+  padding-left: 90rpx
+}
+
+.pl100 {
+  padding-left: 100rpx
+}
+
+.pr10 {
+  padding-right: 10rpx
+}
+
+.pr20 {
+  padding-right: 20rpx
+}
+
+.pr30 {
+  padding-right: 30rpx
+}
+
+.pr40 {
+  padding-right: 40rpx
+}
+
+.pr50 {
+  padding-right: 50rpx
+}
+
+.pr60 {
+  padding-right: 60rpx
+}
+
+.pr70 {
+  padding-right: 70rpx
+}
+
+.pr80 {
+  padding-right: 80rpx
+}
+
+.pr90 {
+  padding-right: 90rpx
+}
+
+.pr100 {
+  padding-right: 100rpx
+}
+
+.pt10 {
+  padding-top: 10rpx
+}
+
+.pt20 {
+  padding-top: 20rpx
+}
+
+.pt30 {
+  padding-top: 30rpx
+}
+
+.pt40 {
+  padding-top: 40rpx
+}
+
+.pt50 {
+  padding-top: 50rpx
+}
+
+.pt60 {
+  padding-top: 60rpx
+}
+
+.pt70 {
+  padding-top: 70rpx
+}
+
+.pt80 {
+  padding-top: 80rpx
+}
+
+.pt90 {
+  padding-top: 90rpx
+}
+
+.pt100 {
+  padding-top: 100rpx
+}
+
+.pb10 {
+  padding-bottom: 10rpx
+}
+
+.pb20 {
+  padding-bottom: 20rpx
+}
+
+.pb30 {
+  padding-bottom: 30rpx
+}
+
+.pb40 {
+  padding-bottom: 40rpx
+}
+
+.pb50 {
+  padding-bottom: 50rpx
+}
+
+.pb60 {
+  padding-bottom: 60rpx
+}
+
+.pb70 {
+  padding-bottom: 70rpx
+}
+
+.pb80 {
+  padding-bottom: 80rpx
+}
+
+.pb90 {
+  padding-bottom: 90rpx
+}
+
+.pb100 {
+  padding-bottom: 100rpx
+}
+
+.flex {
+  display: flex
+}
+
+.flexDr {
+  flex-direction: row
+}
+
+.flexDc {
+  flex-direction: column
+}
+
+.flexJcSb {
+  justify-content: space-between
+}
+
+.bR100 {
+  border-radius: 100rpx
+}
+
+.bR90 {
+  border-radius: 90rpx
+}
+
+.bR80 {
+  border-radius: 80rpx
+}
+
+.bR100 {
+  border-radius: 100rpx
+}
+
+.bR70 {
+  border-radius: 70rpx
+}
+
+.bR60 {
+  border-radius: 60rpx
+}
+
+.bR50 {
+  border-radius: 50rpx
+}
+
+.bR40 {
+  border-radius: 40rpx
+}
+
+.bR30 {
+  border-radius: 30rpx
+}
+
+.bR20 {
+  border-radius: 20rpx
+}
+
+.bR10 {
+  border-radius: 10rpx
+}
+
+.txtOver {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: relative
+}
+
+.txtOverIcon {
+  width: 15rpx;
+  height: 15rpx;
+  background-color: #666;
+  flex-shrink: 0;
+  position: absolute;
+  left: 0rpx
+}
+
+.sticky {
+  position: sticky;
+  top: 0rpx;
+  z-index: 888
+}
+
+.mt200 {
+  margin-top: 180rpx;
+}
+
+.col06478F {
+  color: #06478F;
+}
+
+.col333 {
+  color: ##333333;
+}

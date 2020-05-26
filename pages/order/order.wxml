@@ -1,0 +1,106 @@
+<!--pages/order/order.wxml-->
+<view class="orderPage">
+	<!-- 搜索 -->
+	<view class="wb100 homeSearchIsShare flex flexDr flexJcSb sticky">
+		<view class="homeSearch wb100 mt15 bR100 flex flexDr" style="margin: 10rpx 40rpx;">
+			<view class="homeSearchIcon ml30  mt15">
+				<image src="../image/schare.png"></image>
+			</view>
+			<view class="ml10  wb100">
+				<input class="mt15 wb100" value="" type="text" bindinput="sousuo" placeholder="请输入您要找的预约楼盘信息"></input>
+			</view>
+		</view>
+	</view>
+	<!-- 搜索 -->
+
+	<!-- 公告 -->
+
+	<view class="orderSearch  flex flexDr">
+		<view class="orderSearchIcon  mt30">
+			<image src="../image/explain.png"></image>
+		</view>
+		<view class="ml10">
+			<text>已预约之后点击未到访上传到访单</text>
+		</view>
+	</view>
+
+	<!-- 公告 -->
+
+	<!-- 内容 -->
+	<!-- 预约成功 -->
+	<view class="orderProduct" wx:if="{{appointment != ''}}">
+		<!-- 单个循环层 -->
+		<view class="orderProductSon" wx:for="{{appointment}}" wx:key="index">
+			<view class="orderProductSonTop">
+				<view class="titleImg">
+					<text>{{item.loupanming}}</text>
+				</view>
+				<view class="titleTxt" data-id="{{item.loupanid}}" catchtap="xiangqing">
+					<text>楼盘详情</text>
+				</view>
+			</view>
+			<view class="orderProductSonCont">
+				<view class="orderProductSonContSpeed">
+					<view class="P1">
+						<image src="../image/icon/success.png"></image>
+					</view>
+					<progress wx:if="{{item.zhuangtai == 0}}" percent="30" color="#06478F" backgroundColor="#aaa"></progress>
+					<progress wx:elif="{{item.zhuangtai == 1}}" percent="50" color="#06478F" backgroundColor="#aaa"></progress>
+					<progress wx:elif="{{item.zhuangtai == 2}}" percent="50" color="#06478F" backgroundColor="#aaa"></progress>
+					<progress wx:elif="{{item.zhuangtai == 3}}" percent="75" color="#06478F" backgroundColor="#aaa"></progress>
+					<progress wx:elif="{{item.zhuangtai == 4}}" percent="100" color="#06478F" backgroundColor="#aaa"></progress>
+					<view class="P2">
+						<image wx:if="{{item.zhuangtai == 0}}" src="../image/icon/fang.png"></image>
+						<image wx:elif="{{item.zhuangtai == 1}}" src="../image/icon/success.png"></image>
+						<image wx:elif="{{item.zhuangtai == 2}}" src="../image/icon/success.png"></image>
+						<image wx:elif="{{item.zhuangtai == 3}}" src="../image/icon/success.png"></image>
+						<image wx:else="{{item.zhuangtai == 4}}" src="../image/icon/success.png"></image>
+					</view>
+					<view class="P3">
+						<image wx:if="{{item.zhuangtai == 0}}" src="../image/icon/none.png"></image>
+						<image wx:elif="{{item.zhuangtai == 1}}" src="../image/icon/none.png"></image>
+						<image wx:elif="{{item.zhuangtai == 2}}" src="../image/icon/fang.png"></image>
+						<image wx:elif="{{item.zhuangtai == 3}}" src="../image/icon/fang.png"></image>
+						<image wx:else="{{item.zhuangtai == 4}}" src="../image/icon/success.png"></image>
+					</view>
+				</view>
+				<view class="orderProductSonContTime">
+					<view>
+						<view>已预约</view>
+						<view>{{yuyueTime[index]}}</view>
+					</view>
+					<view style="text-align: center;">
+						<view wx:if="{{item.zhuangtai == 0}}" bindtap="queren" data-id="{{item.id}}" data-name="{{item.loupanming}}">未访问</view>
+						<view wx:elif="{{item.zhuangtai == 1}}">已到访未审核</view>
+						<view wx:elif="{{item.zhuangtai == 2}}">已到访</view>
+						<view wx:elif="{{item.zhuangtai == 3}}">已到访</view>
+						<view wx:elif="{{item.zhuangtai == 4}}">已访问</view>
+						<view wx:if="{{!item.zhuangtai == 1}}">未访问</view>
+						<view wx:else>{{daofangTime[index]}}</view>
+					</view>
+					<view style="text-align: right;">
+						<view wx:if="{{item.zhuangtai == 0}}">未成交</view>
+						<view wx:if="{{item.zhuangtai == 1}}">待成交</view>
+						<view wx:if="{{item.zhuangtai == 2}}" bindtap="daichengjiao" data-id="{{item.id}}" data-name="{{item.loupanming}}">待成交</view>
+						<view wx:if="{{item.zhuangtai == 3}}">已提交未审核</view>
+						<view wx:elif="{{item.zhuangtai == 4}}">已成交</view>
+						<view wx:if="{{item.zhuangtai == 0}}">未成交</view>
+						<view wx:elif="{{item.zhuangtai == 1}}">未成交</view>
+						<view wx:elif="{{item.zhuangtai == 2}}">未成交</view>
+						<view wx:else>{{chengjiaoTime[index]}}</view>
+					</view> 
+				</view>
+			</view>
+		</view>
+		<!-- 单个循环层 -->
+	</view>
+	<!-- 预约成功 -->
+
+	<!-- 没有预约信息 -->
+	<view class="Error" wx:else>
+		<text>您还没有预约信息!</text>
+	</view>
+	<!-- 没有预约信息 -->
+	<!-- 内容 -->
+
+</view>

@@ -1,0 +1,175 @@
+<!--pages/list_detail/list_detail.wxml-->
+<view class="listdetailPage">
+	<!-- 轮播图 -->
+	<view class="listdetailPageSwiper">
+		<swiper autoplay="true" interval="2000">
+			<block wx:for="{{DetailSwiper}}" wx:key="index">
+				<swiper-item>
+					<image src="{{item.lujing}}"></image>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<!-- 轮播图 -->
+
+	<!-- 主要内容介绍 -->
+	<view class="listdetailPageMain">
+		<!-- 楼房介绍 -->
+		<view class="listdetailPageMainIntroduce">
+			<!-- 主要標題 -->
+			<view class="listdetailPageMainTitles">
+				<view class="listdetailPageMainTitle">
+					<text>{{DetailName}}</text>
+				</view>
+				<view class="shares" catchtap="shareFun">
+					<image src="../image/shares.png"></image>
+					分享有礼
+				</view>
+			</view>
+			<!-- 主要標題 -->
+			<!-- 別名 -->
+			<view class="alias">
+				別名：<text>{{DetailNameF}}</text>
+			</view>
+			<!-- 別名 -->
+
+			<!-- 状态类型 -->
+			<view class="state">
+				<view class="homeProductSonContParameterLab" wx:for="{{lable}}"><text>{{item}}</text></view>
+			</view>
+			<!-- 状态类型 -->
+			<view class="aliass">均价：<text>{{shoujia}}</text>元m²</view>
+			<view class="aliass">开盘：<text>{{shijian}}</text></view>
+			<view class="aliass">户型：<text>{{huxing}}室</text> | <text>{{leixing}}</text></view>
+			<view class="aliass">建面：<text>{{jianmian}}</text>m²</view>
+			<view class="aliass height flex flexDr">
+				<view class="aliassSon">
+					地址：<text>{{maps}}</text>
+				</view>
+				<view class="aliassMap" catchtap="mapFun" data-mapname="{{maps}}">
+					<image src="../image/map.png"></image>
+				</view>
+			</view>
+			<!-- 状态类型 -->
+
+			<!-- 到访有礼 + 成交佣金 -->
+			<view class="listdetailPageMoney flex flexDr">
+				<view catchtap="lipin" data-id="{{dataId}}">
+					<image style="width: 37rpx;" src="../image/liwu.png"></image>
+					<text>到访有礼</text>
+				</view>
+				<view style="text-align: right;" catchtap="yongjin" data-id="{{dataId}}">
+					<image src="../image/yjin.png"></image>
+					<text>成交佣金{{yongjin}}元</text>
+				</view>
+			</view>
+			<!-- 到访有礼 + 成交佣金 -->
+
+		</view>
+		<!-- 楼房介绍 -->
+		<!-- 咨询电话 -->
+		<view class="listdetailPagePhone flex flexDr">
+			<view class="wb100">
+				<view class="f36"><text>{{phone}}</text></view>
+				<view class="f24"><text>安全通话隐藏真实号码，致电售楼处了解更多信息</text></view>
+			</view>
+			<view class="PhoneImg" catchtap="phoneFun" data-iphone="{{phone}}">
+				<image src="../image/phone.png"></image>
+			</view>
+		</view>
+		<!-- 咨询电话 -->
+	</view>
+	<!-- 主要内容介绍 -->
+
+	<!-- 順序軸 -->
+	<view class="listdetailPageTime">
+		<view class="listdetailPageTimeTitle">
+			<text>顺序轴</text>
+		</view>
+
+		<view class="listdetailPageTimeImg">
+			<image src="../image/shunxu.png"></image>
+		</view>
+
+	</view>
+	<!-- 順序軸 -->
+
+	<!-- 楼盘简介 -->
+	<view class="listdetailPageIntroduce">
+		<view class="listdetailPageTimeTitle">
+			<text>楼盘简介</text>
+		</view>
+
+		<view class="listdetailPageTimeCont">
+			<rich-text nodes="{{jieshao}}"></rich-text>
+		</view>
+
+
+	</view>
+	<!-- 楼盘简介 -->
+
+	<!-- 立即預約 -->
+	<view class="reflect" data-id="{{dataId}}" data-title="{{DetailName}}" catchtap="orderFun">
+		<text>预约看房</text>
+	</view>
+	<!-- 立即預約 -->
+
+	<!-- 分享弹出 -->
+
+	<view class="shareShow" animation="{{animation}}">
+		<!-- 标题 -->
+		<view class="shareShowTitle">
+			<text>分享有礼</text>
+			<view class="close" catchtap="close">
+				<image src="../image/icon/close.png"></image>
+			</view>
+		</view>
+		<!-- 标题 -->
+		<!-- 文字内容 -->
+		<view class="shareShowTxt">
+			<text>被分享人注册并到访意向楼盘后，即可获得分享奖励，奖励金额会在个人中心显示。</text>
+		</view>
+		<!-- 文字内容 -->
+		<!-- 分享 + 海报 -->
+		<view class="shareShowConts flex flexDr">
+			<view>
+				<button open-type="share"></button>
+				<view class="sharess">
+					<image src="../image/icon/shareIcon.png"></image>
+				</view>
+				<view style="height: 12rpx;"></view>
+				<view><text>分享给朋友</text></view>
+			</view>
+			<view catchtap="poster">
+				<view class="sharess">
+					<image src="../image/icon/shareImg.png"></image>
+				</view>
+				<view style="height: 12rpx;"></view>
+				<view><text>生成海报</text></view>
+			</view>
+		</view>
+		<!-- 分享 + 海报 -->
+	</view>
+	<!-- 分享弹出 -->
+
+	<!-- 默认黑色总面 -->
+	<view catchtap="close" class="blanks {{flag == true ? 'show' : ''}}"></view>
+	<view class="blanks {{flags == true ? 'show' : ''}}"></view>
+	<!-- 默认黑色总面 -->
+
+	<!-- 分享海报 -->
+	<view class="posterImg {{flags == true ? 'show' : ''}}">
+		<view class="posterImgClose" catchtap="close">
+			<image src="../image/icon/closeHua.png"></image>
+		</view>
+		<view class="posterImgView">
+			<image mode="heightFix" src="{{Img}}"></image>
+		</view>
+		<view>
+			<button type="primary" class="mt50" bindtap="saveFun">保存图片至相册</button>
+		</view>
+	</view>
+	<!-- 分享海报 -->
+	<canvas class="canvass" canvas-id="ctx"></canvas>
+
+</view>

@@ -1,0 +1,191 @@
+/* pages/evpi/evpi.wxss */
+@import "../order_detail/order_detail.wxss";
+
+.expiPageHeader {
+  width: 100%;
+  height: 404rpx;
+  background-image: url(https://cmei.dmeit.cn/bannerevpi.png);
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 0rpx 85rpx;
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* // 默认样式 */
+.button {
+  width: auto !important;
+  position: relative;
+  display: block;
+  line-height: 99rpx !important;
+  height: 99rpx !important;
+  padding: 0rpx 0rpx 0rpx 0rpx !important;
+  margin: 0rpx 0rpx 0rpx 0rpx !important;
+  box-sizing: border-box;
+  font-size: 32rpx !important;
+  font-weight: 500 !important;
+  text-align: center;
+  border: 0rpx solid #fff !important;
+  text-decoration: none;
+  line-height: 1;
+  border-radius: 0px !important;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: #000000;
+  background-color: #fff;
+}
+
+
+/* // 点击时样式 */
+.button-hover {
+  background-color: #18569c;
+}
+
+checkbox-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.expiPageHeaderTitle {
+  width: 100%;
+  height: 220rpx;
+  line-height: 320rpx;
+  font-size: 72rpx;
+  font-weight: bold;
+}
+
+.expiPageHeaderFuTitle {
+  font-size: 40rpx;
+  height: 100rpx;
+  font-weight: bold;
+}
+
+.expiPageInformation {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+
+.expiPageView {
+  width: 84%;
+  height: auto;
+  min-height: 99rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #DDDDDD;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.expiPageViewTitle {
+  width: 200rpx;
+  height: 99rpx;
+  line-height: 99rpx;
+  font-size: 32rpx;
+  color: #333;
+  flex-shrink: 0;
+}
+
+.expiPageViewInput {
+  width: 100%;
+  height: 99rpx;
+  line-height: 99rpx;
+  display: flex;
+  position: relative;
+  color: #333333;
+}
+
+.expiPageViewInput>image {
+  width: 15rpx;
+  height: 27rpx;
+  position: absolute;
+  right: 0rpx;
+  margin-top: 40rpx;
+}
+
+.expiPageViewInput>input {
+  width: 100%;
+  height: 99rpx;
+}
+
+.xuanze {
+  width: 100%;
+  height: auto;
+  padding-bottom: 10rpx;
+  justify-content: space-between;
+}
+
+.xuanzeSon {
+  width: auto;
+  min-width: 130rpx;
+  height: 74rpx;
+  padding: 0rpx 10rpx;
+  background-color: transparent;
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 74rpx;
+  margin-top: 20rpx;
+  border: 1rpx solid #06478F;
+  color: #06478F;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+
+.bg06478f {
+  background-color: #06478F;
+  color: #fff;
+}
+
+.col333 {
+  color: #333;
+}
+
+
+/*checkbox 整体大小  */
+checkbox {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.hidess{
+  display: none;
+}
+
+.showss{
+  display: block;
+}
+
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #06478F;
+}
+
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

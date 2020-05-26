@@ -1,0 +1,409 @@
+/* pages/list_detail/list_detail.wxss */
+@import "../index/index.wxss";
+
+.listdetailPage {
+  width: 100%;
+  height: auto;
+  background-color: #f6f6f6;
+  padding-bottom: 30rpx;
+}
+
+.listdetailPageSwiper {
+  width: 100%;
+  height: 447rpx;
+  background-color: #fafafa;
+}
+
+.listdetailPageSwiper>swiper {
+  width: 100%;
+  height: 447rpx;
+}
+
+swiper-item>image {
+  width: 100%;
+  height: 100%;
+}
+
+
+.listdetailPageMain {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding-bottom: 30rpx;
+}
+
+.listdetailPageMainIntroduce {
+  width: 690rpx;
+  height: auto;
+  min-height: 496rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  box-shadow: 0rpx 5rpx 10rpx #e1e1e1;
+  overflow: hidden;
+  margin-top: -86rpx;
+}
+
+.listdetailPageMainTitles {
+  width: 100%;
+  height: 86rpx;
+  font-size: 42rpx;
+  font-weight: bold;
+  color: #333;
+  line-height: 86rpx;
+  display: flex;
+  flex-direction: row;
+  padding-left: 33rpx;
+  box-sizing: border-box;
+}
+
+.listdetailPageMainTitle {
+  width: 100%;
+  height: 86rpx;
+  box-sizing: border-box;
+}
+
+.shares {
+  width: 160rpx;
+  height: 86rpx;
+  flex-shrink: 0;
+  font-size: 24rpx;
+  font-weight: 500;
+}
+
+.shares>image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.alias {
+  width: 100%;
+  height: 62rpx;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  color: #666;
+  padding: 0rpx 33rpx;
+  box-sizing: border-box;
+}
+
+.state {
+  width: 100%;
+  height: auto;
+  min-height: 40rpx;
+  display: flex;
+  flex-direction: row;
+  padding-left: 33rpx;
+  padding-right: 33rpx;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.aliass {
+  width: 100%;
+  height: 45rpx;
+  line-height: 45rpx;
+  font-size: 26rpx;
+  color: #666;
+  padding: 0rpx 33rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+}
+
+.height {
+  width: 90%;
+  height: 60rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+  box-sizing: border-box;
+  padding: 0rpx 0rpx;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.aliassSon {
+  width: 100%;
+}
+
+.aliassMap {
+  width: 49rpx;
+  height: 49rpx;
+  flex-shrink: 0;
+}
+
+.aliassMap>image {
+  width: 100%;
+  height: 100%;
+}
+
+.listdetailPageMoney {
+  width: 100%;
+  height: 80rpx;
+  padding: 0rpx 33rpx;
+  box-sizing: border-box;
+  line-height: 80rpx;
+  justify-content: space-between;
+}
+
+.listdetailPageMoney>view {
+  flex: 1;
+  font-size: 26rpx;
+  color: #06478F;
+}
+
+.listdetailPageMoney>view>image {
+  width: 33rpx;
+  height: 34rpx;
+  margin-top: -8rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.listdetailPagePhone {
+  width: 690rpx;
+  height: 130rpx;
+  border-radius: 14rpx;
+  background-color: #CEE0F4;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  box-sizing: border-box;
+  padding: 0rpx 23rpx;
+}
+
+.PhoneImg {
+  width: 63rpx;
+  height: 63rpx;
+  flex-shrink: 0;
+  margin-top: 32rpx;
+}
+
+.PhoneImg>image {
+  width: 100%;
+  height: 100%;
+}
+
+.f24 {
+  font-size: 24rpx;
+  color: #333;
+}
+
+.f36 {
+  font-size: 36rpx;
+  color: #222;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+
+.listdetailPageTime {
+  width: 100%;
+  height: 190rpx;
+  box-sizing: border-box;
+  padding: 0rpx 36rpx;
+  background-color: #fff;
+  margin-top: 24rpx;
+}
+
+.listdetailPageTimeTitle {
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.listdetailPageTimeImg {
+  width: 100%;
+  height: 74rpx;
+  background-color: #fff;
+  margin-top: 17rpx;
+
+}
+
+.listdetailPageTimeImg>image {
+  width: 100%;
+  height: 100%;
+}
+
+.listdetailPageIntroduce {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 0rpx 36rpx;
+  box-sizing: border-box;
+  margin-top: 24rpx;
+  padding-bottom: 110rpx;
+}
+
+.reflect {
+  width: 100%;
+  height: 110rpx;
+  background-color: #06478F;
+  color: #fff;
+  position: fixed;
+  left: 0rpx;
+  bottom: 0rpx;
+  line-height: 110rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+
+.shareShow {
+  width: 100%;
+  height: 406rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.shareShowTitle {
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: #fff;
+  font-size: 38rpx;
+  font-weight: bold;
+  color: #06478F;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 35rpx;
+  top: 38rpx;
+  width: 30rpx;
+  height: 30rpx;
+  z-index: 889;
+}
+
+.close>image {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.blanks {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  display: none;
+  z-index: 888;
+}
+
+.show {
+  display: block !important;
+}
+
+.shareShowTxt {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 0rpx 40rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: #484848;
+}
+
+.shareShowConts {
+  width: 100%;
+  height: 225rpx;
+
+}
+
+.shareShowConts>view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #06478F;
+  font-size: 28rpx;
+  position: relative;
+}
+
+.shareShowConts>view>button {
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  line-height: 112px;
+  padding: 0 0 !important;
+}
+
+.sharess {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+
+
+.posterImgView {
+  width: 100%;
+  height: 795rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0rpx 33rpx;
+}
+
+.posterImgView>image {
+  width: 100% !important;
+  height: 795rpx !important;
+}
+
+
+.sharess>image {
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  width: 580rpx !important;
+  height: 500rpx;
+  background-color: red;
+  margin: 0 auto;
+}
+
+.posterImgClose {
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  text-align: right;
+}
+
+.posterImgClose>image {
+  width: 66rpx;
+  height: 66rpx;
+  margin-top: 20rpx;
+  margin-right: 28rpx;
+}
+
+.posterImg {
+  width: 650rpx;
+  height: 1070rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  position: fixed;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  margin-top: -535rpx;
+  margin-left: -325rpx;
+  z-index: 890;
+  display: none;
+}
+
+.canvass {
+  width: 293rpx;
+  height: 795rpx;
+  position: absolute;
+  top: 1000rpx;
+  left: 1000rpx;
+  background-color: #fff;
+}

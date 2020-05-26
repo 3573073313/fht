@@ -1,0 +1,74 @@
+<!--pages/change_evpi/change_evpi.wxml-->
+<view class="expiPage">
+	<!-- 頂部header -->
+	<view class="expiPageHeader">
+		<view class="expiPageHeaderTitle">
+			<text>更改信息</text>
+		</view>
+		<view class="expiPageHeaderFuTitle">
+			<text>欢迎来到房惠通！</text>
+		</view>
+	</view>
+	<!-- 頂部header -->
+
+	<!-- 信息曾 -->
+	<view class="expiPageInformation">
+		<form bindsubmit="formSubmit">
+			<view class="expiPageView">
+				<view class="expiPageViewTitle">
+					<text>姓名</text>
+				</view>
+				<view class="expiPageViewInput">
+					<input type="text" value="{{name}}" disabled="true" name="name"></input>
+				</view>
+			</view>
+			<view class="expiPageView">
+				<view class="expiPageViewTitle">
+					<text>手机号</text>
+				</view>
+				<view class="expiPageViewInput">
+					<input disabled="true" type="text" name="phone" value="{{phone}}"></input>
+				</view>
+			</view>
+
+			<view class="expiPageView" style="flex-direction: column;">
+				<view class="flex">
+					<view class="expiPageViewTitle">
+						<text>选择类型</text>
+					</view>
+					<view class="expiPageViewInput">
+						<text>请选择房产类型(可多选)</text>
+					</view>
+				</view>
+
+				<view class="xuanze flex">
+					<checkbox-group name="checkbox">
+						<view class="xuanzeSon {{item.bool == true ? 'bg06478f' : ''}}" wx:for="{{fenLeiList}}" catchtap="xuanzeFun" data-index="{{index}}" wx:key="index">
+							<checkbox value="{{item.id}}" checked="{{item.bool}}"></checkbox>
+							{{item.name}}
+						</view>
+					</checkbox-group>
+				</view>
+			</view>
+
+			<view class="expiPageView">
+				<view class="expiPageViewTitle">
+					<text>意向区域</text>
+				</view>
+				<view class="expiPageViewInput">
+					<picker mode="multiSelector" range="{{multiArray}}" value="{{multiIndex}}" bindchange="change" bindcolumnchange="columnchange">
+						<input class="mt30" type="text" disabled="true" value="{{multiArray[0] [multiIndex[0]]}} - {{multiArray[1] [multiIndex[1]]}} - {{multiArray[2] [multiIndex[2]]}}" name="address"></input>
+					</picker>
+					<image src="../image/icon/rightIcon.png"></image>
+				</view>
+			</view>
+
+			<view class="mt180">
+				<button class="formSub" form-type="submit">确认完善</button>
+			</view>
+
+		</form>
+	</view>
+	<!-- 信息曾 -->
+
+</view>

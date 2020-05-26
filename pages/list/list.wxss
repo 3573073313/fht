@@ -1,0 +1,167 @@
+@import "../index/index.wxss";
+
+.listPage {
+  height: 1500rpx;
+  background-color: #f6f6f6
+}
+
+.listBanner {
+  height: 320rpx;
+  background-color: #fafafa;
+  padding-bottom: 20rpx
+}
+
+.listBannerSon {
+  width: 690rpx;
+  height: 320rpx;
+  background-color: #fafafa;
+  margin: 0 auto;
+  border-radius: 20rpx
+}
+
+.listBannerSon>image {
+  width: 100%;
+  height: 100%
+}
+
+.listProduct {
+  height: auto;
+  margin-top: 22rpx;
+  position: relative;
+}
+
+.listProductNav {
+  height: 86rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+  box-sizing: border-box
+}
+
+.listProductNav>view {
+  flex: 1;
+  background-color: #fff;
+  line-height: 86rpx;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+  color: #333
+}
+
+.iconBtm {
+  width: 20rpx;
+  height: 14rpx;
+  margin-top: 36rpx;
+  margin-left: 10rpx
+}
+
+.iconBtm>image {
+  width: 100%;
+  height: 100%;
+  display: block
+}
+
+.listProductNavColor {
+  color: #06478f !important;
+  font-weight: bold
+}
+
+.pore {
+  position: relative;
+}
+
+.NavConts {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  position: absolute;
+  display: none;
+  top: 86rpx;
+  left: 0rpx;
+  z-index: 999;
+}
+
+.NavContShow {
+  display: block !important;
+}
+
+.hides {
+  display: none;
+}
+
+.dizhi {
+  width: 100%;
+  height: 90rpx;
+  background-color: #fafafa;
+  line-height: 90rpx;
+  color: #06478f;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+}
+
+scroll-view {
+  border: none;
+}
+
+.shi {
+  width: 75%;
+  height: 300rpx;
+  position: absolute;
+  display: none;
+  right: 0rpx;
+  top: 0rpx;
+  z-index: 123;
+}
+
+.shicolor {
+  background-color: #fff;
+}
+
+.qu {
+  width: 45%;
+  height: 300rpx;
+  position: absolute;
+  display: none;
+  right: 0rpx;
+  top: 0rpx;
+  z-index: 124;
+}
+
+.qucolor {
+  background-color: #fff;
+  border-left: 1rpx solid #e1e1e1;
+  box-sizing: border-box;
+}
+
+.jiage {
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  line-height: 90rpx;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+  color: #06478f;
+}
+
+.jiage:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.fangxing {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.fangxingSon {
+  width: 140rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #06478f;
+  color: #fff;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}

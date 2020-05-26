@@ -1,0 +1,44 @@
+<!--pages/search/search.wxml-->
+<view class="searchPage">
+	<view class="wb100 padds homeSearchIsShare flex flexDr sticky">
+		<view class="homeSearch wb100 mt15 bR100  flex flexDr">
+			<view class="homeSearchIcon ml30  mt15">
+				<image src="../image/schare.png"></image>
+			</view>
+			<view class="ml10 in">
+				<input bindinput="inputSucc" placeholder="请输入您要查找的楼盘名称"></input>
+			</view>
+		</view>
+	</view>
+	<!-- 產品 -->
+	<!-- 下層部分 -->
+	<view class="homePageBtm" wx:if="{{product}}">
+		<view class="homeProduct  wd100 mt30">
+			<!-- 单楼渲染 -->
+			<view wx:for="{{product}}" wx:key="index" catchtap="listDetail" data-id="{{item.id}}" class="homeProductSon wd100 flex flexDr flexJcSb">
+				<view class="homeProductSonImg bR10  mt20">
+					<image src="{{item.zhutu}}"></image>
+				</view>
+				<view class="homeProductSonCont mt20 ml30">
+					<view class="homeProductSonContTitle">
+						<text>{{item.name}}</text>
+					</view>
+					<view class="homeProductSonContAddress">
+						<text>{{item.dizhi}}</text>
+					</view>
+					<view class="homeProductSonContParameter flex flexDr">
+						<view class="homeProductSonContParameterLab" wx:for="{{item.biaoqians}}" wx:key="index"><text>{{item}}</text></view>
+					</view>
+					<view class="homeProductSonContPeople">
+						<text>{{item.junjia}}</text>元/m²起
+					</view>
+				</view>
+			</view>
+			<!-- 单楼渲染 -->
+		</view>
+	</view>
+	<!-- 下層部分 -->
+	<view class="onSecher" wx:else>
+		<text>请输入您要搜索的内容</text>
+	</view>
+</view>

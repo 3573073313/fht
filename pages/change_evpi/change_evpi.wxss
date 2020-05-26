@@ -1,0 +1,2 @@
+/* pages/change_evpi/change_evpi.wxss */
+@import "../evpi/evpi.wxss";

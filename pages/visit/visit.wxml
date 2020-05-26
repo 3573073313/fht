@@ -1,0 +1,13 @@
+<!--pages/visit/visit.wxml-->
+<view class="visitPage">
+  <view class="visitPageSon">
+    <view class="visitPageSonlist" wx:for="{{visitList}}">
+      <view class="visitPageSonlistImg">
+        <image mode="widthFix" src="{{item.tupian}}"></image>
+      </view>
+      <view class="visitPageSonlistTxt">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

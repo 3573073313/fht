@@ -1,0 +1,15 @@
+<!--pages/consultation/consultation.wxml-->
+<view class="consultationPage" wx:if="{{louList != ''}}">
+	<view class="consultationPageSon" wx:for="{{louList}}" wx:key="index" data-id="{{item.id}}" catchtap="DetailFun">
+		<view class="consultationPageSonTitle">
+			<text>{{item.name}}</text>
+		</view>
+		<view class="consultationPageSonDate">
+			<text>{{time[index]}}</text>
+		</view>
+	</view>
+</view>
+
+<view class="consultationPage" wx:else>
+	<text>暂无数据</text>
+</view>

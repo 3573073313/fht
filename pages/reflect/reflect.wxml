@@ -1,0 +1,126 @@
+<!--pages/reflect/reflect.wxml-->
+<view class="reflectPage">
+
+	<!-- 提现金额总体 -->
+	<view class="reflectPageMain">
+
+		<form bindsubmit="formSub">
+			<view class="InputView">
+				<view class="InputViewTitle">
+					<text>提现金额</text>
+				</view>
+				<view class="InputViewCont">
+					<input type="number" bindinput="people" data-name="NumerPeople" value="{{jine}}" placeholder="单次最少提现200元"></input>
+				</view>
+			</view>
+			<view class="InputView">
+				<view class="InputViewTitle">
+					<text>提现至</text>
+				</view>
+				<view class="InputViewCont" wx:for="{{payList}}" wx:key="index" catchtap="PayFun" data-index="{{index}}">
+					<view>
+						<view>
+							<radio checked="{{PayIndex == index ? 'Checked' : ''}}"></radio>
+						</view>
+						<view>
+							<image src="{{item.payListImg}}"></image>{{item.payListTxt}}
+						</view>
+					</view>
+
+				</view>
+			</view>
+			<!-- 微信 -->
+			<view class="{{PayIndex == 0 ? 'show' : 'hide'}}">
+				<view class="InputView" style="flex-direction: column;padding-bottom: 20rpx;">
+					<view class="InputViewTitle" style="width: 100%;">
+						<text>收款码(上传微信收款码)</text>
+					</view>
+					<view class="fileSuccess" bindtap="fileUpload">
+						<image src="{{fileImg}}"></image>
+					</view>
+				</view>
+			</view>
+			<!-- 微信 -->
+
+			<!-- 支付宝 -->
+			<view class="{{PayIndex == 1 ? 'show' : 'hide'}}">
+				<view class="InputView">
+					<view class="InputViewTitle">
+						<text>收款人姓名</text>
+					</view>
+					<view class="InputViewCont">
+						<input type="text" value="{{zPayName}}" placeholder="请填写您的真实姓名" bindinput="zPayName" placeholder-class="placeholderStyle"></input>
+					</view>
+				</view>
+
+				<view class="InputView">
+					<view class="InputViewTitle">
+						<text>支付宝账号</text>
+					</view>
+					<view class="InputViewCont">
+						<input type="number" bindinput="zPayPeople" data-name="zPayPeople" value="{{zPayPeople}}" placeholder="请填写您的支付宝账号" placeholder-class="placeholderStyle"></input>
+					</view>
+				</view>
+			</view>
+
+			<!-- 支付宝 -->
+
+			<!-- 银行 -->
+			<view class="{{PayIndex == 2 ? 'show' : 'hide'}}">
+				<view class="InputView">
+					<view class="InputViewTitle">
+						<text>所属银行</text>
+					</view>
+					<view class="InputViewCont">
+						<picker class="mt25" bindchange="BankFun" mode="selector" range="{{BankList}}" value="{{BankIndex}}">
+							<input type="text" bindinput="uPay" data-name="uPay" value="{{BankList[BankIndex]}}" placeholder="请选择所属银行" placeholder-class="placeholderStyle" disabled="true"></input>
+						</picker>
+					</view>
+				</view>
+
+				<view class="InputView">
+					<view class="InputViewTitle">
+						<text>所属支行</text>
+					</view>
+					<view class="InputViewCont">
+						<input type="text" bindinput="uPaySon" data-name="uPaySon" value="{{uPaySon}}" placeholder="请填写所属支行" placeholder-class="placeholderStyle"></input>
+					</view>
+				</view>
+
+				<view class="InputView">
+					<view class="InputViewTitle">
+						<text>预留姓名</text>
+					</view>
+					<view class="InputViewCont">
+						<input type="text" bindinput="uPayName" data-name="uPayName" value="{{uPayName}}" placeholder="请填写您的真实姓名" placeholder-class="placeholderStyle"></input>
+					</view>
+				</view>
+
+
+				<view class="InputView">
+					<view class="InputViewTitle">
+						<text>银行卡号</text>
+					</view>
+					<view class="InputViewCont">
+						<input type="number" bindinput="uPayNum" data-name="uPayNum" value="{{uPayNum}}" placeholder="请填写您的银行卡号" placeholder-class="placeholderStyle"></input>
+					</view>
+				</view>
+
+			</view>
+
+			<!-- 银行 -->
+
+			<view class="wb90 mx fz">
+				可提现余额<text class="col06478F">{{people}}</text>元(仅支持大于200元的提现申请)
+			</view>
+			<button class="formSub" form-type="submit">确认提现</button>
+		</form>
+
+	</view>
+	<!-- 提现金额总体 -->
+
+	<view class="wb90 mx col06478F" data-userid="{{Userid}}" catchtap="withdrawal">
+		<text>提现明细</text>
+	</view>
+
+</view>
